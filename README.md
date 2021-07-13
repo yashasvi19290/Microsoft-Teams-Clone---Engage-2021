@@ -13,4 +13,4 @@ A functional prototype of a Microsoft Teams clone built with the help of Node.js
 This project was inspired by https://levelup.gitconnected.com/building-a-video-chat-app-with-node-js-socket-io-webrtc-26f46b213017.
 
 ## Screenshots
-![IMG](./MicrosoftTeams_Clone.png
+![IMG](./MicrosoftTeams_Clone.png)
