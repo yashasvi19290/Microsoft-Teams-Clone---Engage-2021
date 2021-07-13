@@ -4,7 +4,7 @@ A functional prototype of a Microsoft Teams clone built with the help of Node.js
 ## Setup
 1. Download the repository to your system.
 2. Open the project directory.
-3. Open the Command Prompt and run the following commands:
+3. Open the Command Prompt, reach the directory and run the following commands:
     - npm install
     - npm start
 4. The application can be accessed at http://localhost:3030/.
