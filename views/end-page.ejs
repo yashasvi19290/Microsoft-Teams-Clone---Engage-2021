@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Call Ended</title>
+    
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+    
+    <script> var ID = "<%= ID %>"; </script>
+</head>
+
+<body>
+    <!-- Page Header: Includes title -->
+    <header class="page-header">
+        <div class="page-title">
+            <label id="title">
+                <span>Call Concluded</span>
+            </label>
+        </div>
+    </header>
+
+    <!-- Page Main: Includes landing image and options  -->
+    <main>
+        <section class="landing">
+            <div class="landing-image">
+                <img class="image" src="https://thinkersandfillers.com/wp-content/uploads/2021/01/online-team-building-image.png">
+            </div>
+        </section>
+
+        <section class="landing-options">
+            <label id="greet">We hope you had a great time!</label>
+            <label id="greet">-----------------------------</label>
+            <div class="option" id="rejoin" onclick="rejoin()">
+                <i class="bx bx-phone-call"></i>
+                <span> Rejoin the Call</span>
+            </div>
+            <div class="option" id="home" onclick="goToHome()">
+                <i class="bx bx-home"></i>
+                <span> Return to the Homepage</span>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <!-- Page Script: To allow interaction -->
+    <script src = "end-page-script.js"></script>
+</body>
+</html>

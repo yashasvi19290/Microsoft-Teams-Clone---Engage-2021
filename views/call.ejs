@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ongoing Call</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script> var ID = "<%= ID %>"; </script>
+</head>
+
+<body>
+    <div class="screen">
+
+        <!-- Page Header: Includes title -->
+        <header class="page-header">
+            <div class="page-title">
+                <label id="title"></label>
+            </div>
+        </header>
+        
+        <!-- Page Main: Includes video grid and chat window -->
+        <div class="video-grid" id="attendees"></div>
+        <div class="chat-pane" id="chat-pane"></div>
+        
+        <!-- User Space: Includes username and confirmation to join -->
+        <input class="user-name" id="name" placeholder="Enter Name Here">
+        <div class="enter-button" id="enter-button">Enter</div>
+        
+        <!-- Options Pane: Includes call options -->
+        <div class="options-pane">
+            <div class="option-button" id="audio" onclick = "toggleAudio()">
+                <i class="bx bxs-microphone bx-md bx-border-circle"></i>
+            </div>
+            <div class="option-button" id="video" onclick = "toggleVideo()">
+                <i class="bx bxs-video bx-md bx-border-circle"></i>
+            </div>
+            <div class="option-button" id="end" onclick = "hangUp()">
+                <i class="bx bxs-phone bx-md bx-border-circle"></i>
+            </div>
+            <div class="option-button" id="chat" onclick = "toggleChat()">
+                <i class="bx bxs-chat bx-md bx-border-circle"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Script: To allow interaction -->
+    <script src = "call-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MicrosoftTeams_Clone</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <!-- Page Header: Includes title -->
+    <header class="page-header">
+        <div class="page-title">
+            <label id="title">
+                <span>Microsoft Teams 2.0 [Engage'21]</span>
+            </label>
+        </div>
+    </header>
+
+    <!-- Page Main: Includes landing image and options  -->
+    <main>
+        <section class="landing">
+            <div class="landing-image">
+                <img src="https://news.chapman.edu/wp-content/uploads/2020/08/Online-Meeting.jpg">
+            </div>
+        </section>
+
+        <section class="landing-options">
+            <div class="option" id="new-call" onclick="initiateNewCall()">
+                <i class="bx bx-phone-outgoing"></i>
+                <span> Initiate a New Call</span>
+            </div>
+            <div class="option" id="join-call" onclick="joinExistingCall()">
+                <i class="bx bx-phone-call"></i>
+                <span> Join an Existing Call</span>
+            </div>
+            <form>
+                <label class="input">Enter Call ID: </label>
+                <input class="input" type="text" id="callID">
+            </form>
+        </div>
+        </section>
+    </main>
+
+    <!-- Page Script: To allow interaction -->
+    <script src = "landing-page-script.js"></script>
+</body>
+</html>
